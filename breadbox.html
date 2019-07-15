@@ -11,19 +11,26 @@
              .addService(googletag.pubads());
     googletag.defineSlot('/4580722/breadboxmedia.com_homepage_large_3', [[1200,252]], 'div-gpt-ad-2173396-4')
              .addService(googletag.pubads());
-
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
   });
   
-  var mapping1 = googletag.sizeMapping().
-  addSize([0, 0], []).
-  addSize([728, 90], [1024, 120]). // Desktop
-  addSize([1200, 252], [1024, 120]). // Desktop
-  build();
+  // below added by hugh
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-2173396-1'); });
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-2173396-2'); });
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-2173396-3'); });
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-2173396-4'); });
+  // above added by hugh
+  
+  // var mapping1 = googletag.sizeMapping().
+  //  addSize([0, 0], []).
+  //  addSize([728, 90], [1024, 120]). // Desktop
+  //  addSize([1200, 252], [1024, 120]). // Desktop
+  //  build(); //
   
    var gptAdSlots = [];
- 
+  
+ /*
 gptAdSlots[0] = googletag.defineSlot('/4580722/breadboxmedia.com_homepage', [728, 900], 'ad-slot-1').
   defineSizeMapping(mapping1).
   setCollapseEmptyDiv(true).
@@ -45,5 +52,6 @@ gptAdSlots[1] = googletag.defineSlot('/4580722/breadboxmedia.com_homepage_large_
   defineSizeMapping(mapping1).
   setCollapseEmptyDiv(true).
   addService(googletag.pubads());
+  */
 </script>
 <!-- End GPT Tag -->
