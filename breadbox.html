@@ -1,24 +1,15 @@
 <!-- Start GPT Tag -->
 <script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
 <script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    googletag.defineSlot('/4580722/breadboxmedia.com_homepage', [[728,90]], 'div-gpt-ad-2173396-1')
-             .addService(googletag.pubads());
-    googletag.defineSlot('/4580722/breadboxmedia.com_homepage_large_1', [[1200,252]], 'div-gpt-ad-2173396-2')
-             .addService(googletag.pubads());
-    googletag.defineSlot('/4580722/breadboxmedia.com_homepage_large_2', [[1200,252]], 'div-gpt-ad-2173396-3')
-             .addService(googletag.pubads());
-    googletag.defineSlot('/4580722/breadboxmedia.com_homepage_large_3', [[1200,252]], 'div-gpt-ad-2173396-4')
-             .addService(googletag.pubads());
 
-    googletag.pubads().enableSingleRequest();
-    googletag.enableServices();
-  });
   
   var mapping1 = googletag.sizeMapping().
   addSize([0, 0], []).
   addSize([728, 90], [1024, 120]). // Desktop
+  build();
+  
+  var mapping2 = googletag.sizeMapping().
+  addSize([0, 0], []).
   addSize([1200, 252], [1024, 120]). // Desktop
   build();
   
@@ -31,18 +22,18 @@ gptAdSlots[0] = googletag.defineSlot('/4580722/breadboxmedia.com_homepage', [728
   
 
 gptAdSlots[1] = googletag.defineSlot('/4580722/breadboxmedia.com_homepage_large_1', [1200, 252], 'ad-slot-1').
-  defineSizeMapping(mapping1).
+  defineSizeMapping(mapping2).
   setCollapseEmptyDiv(true).
   addService(googletag.pubads());
   
  gptAdSlots[2] = googletag.defineSlot('/4580722/breadboxmedia.com_homepage_large_2', [1200, 252], 'ad-slot-1').
-  defineSizeMapping(mapping1).
+  defineSizeMapping(mapping2).
   setCollapseEmptyDiv(true).
   addService(googletag.pubads());
   
   
  gptAdSlots[3] = googletag.defineSlot('/4580722/breadboxmedia.com_homepage_large_3', [1200, 252], 'ad-slot-1').
-  defineSizeMapping(mapping1).
+  defineSizeMapping(mapping2).
   setCollapseEmptyDiv(true).
   addService(googletag.pubads());
 </script>
