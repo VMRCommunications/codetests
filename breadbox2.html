@@ -1,0 +1,59 @@
+<!-- START: REVISED Catholic Audience Network Tag for CatholicWorldReport.com -->
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+// main portion of tag
+//// MAKE IT HIDDEN
+var responsiveGoogleAdContainer = document.querySelector('[data-responsive-ad]');
+if (responsiveGoogleAdContainer) {
+  responsiveGoogleAdContainer.style.visibility = 'hidden';
+}
+var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/4580722/CatholicWorldReport.com_300x250_BTF_Premium2', [300, 250], 'div-gpt-ad-1497984362447-0').setTargeting('domain', ['catholicworldreport.com']).setTargeting('adunitname', ['CatholicWorldReport.com_300x250_BTF_Premium2']).addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1497984362447-0'); });
+// responsive code
+window.onload = function() {
+  	function responsiveAd (id) {
+      if (Array.isArray(id)) { return id.forEach(responsiveAd); }
+      function afterImgLoad () {
+
+        var $img = $doc.querySelector("img");
+        // $img.style.width = "100%";
+        // $img.style.maxWidth = $img.getAttribute("width") + "px";
+        $img.style.maxWidth = "100%";
+        $img.style.height = "auto";
+        var $iframeAd = $doc.querySelector("iframe");
+        if ($iframeAd) {
+          
+          	$iframeAd.style.maxWidth = "100%";
+        }
+        $iframe.style.width = "100%";
+        $iframe.style.minHeight = "40px";
+        if (responsiveGoogleAdContainer) {
+          //// IT's NOW SAFE TO SHOW
+	        responsiveGoogleAdContainer.style.visibility = 'visible';
+        }
+        $doc.querySelector("#google_image_div").style.width = "100%";
+      }
+
+      var $iframe = document.querySelector("#" + id + " iframe");
+      var $doc = $iframe.contentDocument || $iframe.contentWindow.document;
+ 
+      var $elmReady = $doc.querySelector("img, iframe");
+
+      if ($elmReady) {
+        afterImgLoad();
+      } else {
+        $iframe.onload = afterImgLoad;
+      }  
+    }
+  	
+  responsiveAd(Array.prototype.slice.call(document.querySelectorAll("[data-responsive-ad='on']")).map(function (c) { return c.id; }) );
+};
+</script>
+<div id='div-gpt-ad-1497984362447-0' data-responsive-ad="on">
+<!-- END: REVISED Catholic Audience Network Tag for CatholicWorldReport.com -->
