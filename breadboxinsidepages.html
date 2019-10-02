@@ -1,0 +1,99 @@
+<!-- START: REVISED Catholic Audience Network Tag for CatholicWorldReport.com -->
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+    // main portion of tag
+    //// MAKE IT HIDDEN
+    var responsiveGoogleAdContainer = document.querySelector('[data-responsive-ad]');
+    if (responsiveGoogleAdContainer) {
+        responsiveGoogleAdContainer.style.visibility = 'hidden';
+    }
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    googletag.cmd.push(function() {
+        googletag.defineSlot('/4580722/breadboxmedia.com_insidepages', [1200, 252], 'div-gpt-ad-1497984362447-0').setTargeting('domain', ['breadboxmedia.com']).setTargeting('adunitname', ['bbm1']).addService(googletag.pubads());
+        googletag.defineSlot('/4580722/breadboxmedia.com_homepage_large_1', [1200, 252], 'div-gpt-ad-1497984362447-1').setTargeting('domain', ['breadboxmedia.com']).setTargeting('adunitname', ['bbm1']).addService(googletag.pubads());
+        googletag.defineSlot('/4580722/breadboxmedia.com_homepage_large_2', [1200, 252], 'div-gpt-ad-1497984362447-2').setTargeting('domain', ['breadboxmedia.com']).setTargeting('adunitname', ['bbm1']).addService(googletag.pubads());
+        googletag.defineSlot('/4580722/breadboxmedia.com_homepage_large_3', [1200, 252], 'div-gpt-ad-1497984362447-3').setTargeting('domain', ['breadboxmedia.com']).setTargeting('adunitname', ['bbm1']).addService(googletag.pubads());
+        //    googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    });
+    googletag.cmd.push(function() {
+        googletag.display('div-gpt-ad-1497984362447-0');
+    });
+ //    googletag.cmd.push(function() {
+   //      googletag.display('div-gpt-ad-1497984362447-1');
+    });
+ //    googletag.cmd.push(function() {
+  //       googletag.display('div-gpt-ad-1497984362447-2');
+    });
+//     googletag.cmd.push(function() {
+  //       googletag.display('div-gpt-ad-1497984362447-3');
+ //    });
+    // responsive code
+    window.onload = function() {
+        function responsiveAd(id) {
+            if (Array.isArray(id)) {
+                return id.forEach(responsiveAd);
+            }
+            var $iframe = document.querySelector("#" + id + " iframe");
+            function afterImgLoad() {
+                var $img = $doc.querySelector("img");
+                if (!$img) { return setTimeout(afterImgLoad, 0) }
+                var $ampImg = $img.parentElement
+                var ratio = parseInt($ampImg.style.width) / parseInt($ampImg.style.height)
+                $ampImg.style.maxWidth = "100%"
+                var resize = function () {
+                    var newHeight = $ampImg.style.height = ($ampImg.getBoundingClientRect().width / ratio) + "px"
+                    $ampImg.setAttribute("height", newHeight)
+                    $iframe.setAttribute("height", newHeight)
+                }
+                window.addEventListener("resize", resize)
+                // $img.style.width = "100%";
+                // $img.style.maxWidth = $img.getAttribute("width") + "px";
+                $img.style.maxWidth = "100%";
+                $img.style.height = "auto";
+                var $iframeAd = $doc.querySelector("iframe");
+                if ($iframeAd) {
+                    $iframeAd.style.maxWidth = "100%";
+                }
+                $iframe.style.width = "100%";
+                $iframe.style.minHeight = "40px";
+                if (responsiveGoogleAdContainer) {
+                    //// IT's NOW SAFE TO SHOW
+                    responsiveGoogleAdContainer.style.visibility = 'visible';
+                }
+                $doc.querySelector("#google_image_div").style.width = "100%";
+                resize()
+            }
+            if (!$iframe) {
+                return setTimeout(function () {
+                    responsiveAd(id)
+                }, 0)
+            }
+            var $doc = $iframe.contentDocument || $iframe.contentWindow.document;
+            var $elmReady = $doc.querySelector("img, iframe");
+            if ($elmReady) {
+                afterImgLoad();
+            } else {
+                $iframe.onload = afterImgLoad;
+            }
+        }
+        responsiveAd(Array.prototype.slice.call(document.querySelectorAll("[data-responsive-ad='on']")).map(function(c) {
+            return c.id;
+        }));
+  //       responsiveAd(Array.prototype.slice.call(document.querySelectorAll("[data-responsive-ad1='on']")).map(function(c) {
+ //            return c.id;
+  //       }));
+ //        responsiveAd(Array.prototype.slice.call(document.querySelectorAll("[data-responsive-ad2='on']")).map(function(c) {
+ //            return c.id;
+   //      }));
+ //        responsiveAd(Array.prototype.slice.call(document.querySelectorAll("[data-responsive-ad3='on']")).map(function(c) {
+  //           return c.id;
+   //      }));
+    };
+</script>
+<div id='div-gpt-ad-1497984362447-0' data-responsive-ad="on"></div>
+<!-- <div id='div-gpt-ad-1497984362447-1' data-responsive-ad1="on"></div> -->
+<!-- <div id='div-gpt-ad-1497984362447-2' data-responsive-ad2="on"></div> -->
+<!-- <div id='div-gpt-ad-1497984362447-3' data-responsive-ad3="on"></div> -->
+<!-- END: REVISED Catholic Audience Network Tag for CatholicWorldReport.com -->
